@@ -114,15 +114,23 @@ Main tables used:
 
 1. Install **XAMPP** and start **Apache** & **MySQL**.
 2. Clone this repository into your XAMPP `htdocs` directory:
+   ```javascript
+   bash
+   cd C:\xampp\htdocs
+   git clone https://github.com/fatema5352/Smart-Baking-Project.git```
 3. Create a MySQL database (e.g. baking_db) via phpMyAdmin.
 4. Import / create the required tables (as defined above).
 5. Update db.php with your local DB details:
-          $host = "localhost";
-          $user = "root";
-          $pass = "";
-          $dbname = "baking_db";
-
-
-   ```bash
-   cd C:\xampp\htdocs
-   git clone https://github.com/fatema5352/Smart-Baking-Project.git
+```javascript
+$host = "localhost";
+$user = "root";
+$pass = "";
+$dbname = "baking_db";
+```
+6. In browser open:
+   ```javascript
+   http://localhost/Smart-Baking-Project/index.php
+    ```
+7. Create a normal user from ``` register.php.```
+9. Make one user admin by setting ``` is_admin = 1``` in the ``` users``` table (via phpMyAdmin).
+   
