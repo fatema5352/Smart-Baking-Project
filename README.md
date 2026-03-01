@@ -114,6 +114,14 @@ Main tables used:
 
 1. Install **XAMPP** and start **Apache** & **MySQL**.
 2. Clone this repository into your XAMPP `htdocs` directory:
+3. Create a MySQL database (e.g. baking_db) via phpMyAdmin.
+4. Import / create the required tables (as defined above).
+5. Update db.php with your local DB details:
+$host = "localhost";
+$user = "root";
+$pass = "";
+$dbname = "baking_db";
+
 
    ```bash
    cd C:\xampp\htdocs
